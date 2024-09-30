@@ -39,6 +39,28 @@ FileNotFoundError: [Errno 2] No such file or directory:
 
 ## Step to reproduce
 
+OS: Win 11
+sam --version: SAM CLI, version 1.124.0 or SAM CLI, version 1.125.0
+AWS region: eu-south-1
+{
+  "version": "1.124.0",
+  "system": {
+    "python": "3.12.6",
+    "os": "Windows-11-10.0.22631-SP0"
+  },
+  "additional_dependencies": {
+    "docker_engine": "Not available",
+    "aws_cdk": "Not available",
+    "terraform": "Not available"
+  },
+  "available_beta_feature_env_vars": [
+    "SAM_CLI_BETA_FEATURES",
+    "SAM_CLI_BETA_BUILD_PERFORMANCE",
+    "SAM_CLI_BETA_TERRAFORM_SUPPORT",
+    "SAM_CLI_BETA_RUST_CARGO_LAMBDA"
+  ]
+}
+
 ```bash
 # dependency installation
 $ npm install
