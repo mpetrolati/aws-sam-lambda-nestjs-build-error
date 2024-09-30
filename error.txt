@@ -1,0 +1,123 @@
+sam build --debug
+2024-09-30 11:03:05,747 | No config file found in this directory.
+2024-09-30 11:03:05,751 | OSError occurred while reading TOML file: [Errno 2] No such file or directory:
+'C:\\ec4a9867-4d56\\AWS\\test\\my-nestjs-lambda-test\\samconfig.toml'
+2024-09-30 11:03:05,753 | Config file location: C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test\samconfig.toml
+2024-09-30 11:03:05,755 | Config file 'C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test\samconfig.toml' does not exist
+2024-09-30 11:03:05,758 | Using SAM Template at C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test\template.yaml
+2024-09-30 11:03:05,777 | OSError occurred while reading TOML file: [Errno 2] No such file or directory:
+'C:\\ec4a9867-4d56\\AWS\\test\\my-nestjs-lambda-test\\samconfig.toml'
+2024-09-30 11:03:05,778 | Using config file: samconfig.toml, config environment: default
+2024-09-30 11:03:05,780 | Expand command line arguments to:
+2024-09-30 11:03:05,781 | --template_file=C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test\template.yaml --mount_with=READ
+--build_dir=.aws-sam\build --cache_dir=.aws-sam\cache
+2024-09-30 11:03:06,033 | 'build' command is called
+2024-09-30 11:03:06,037 | No Parameters detected in the template
+2024-09-30 11:03:06,073 | There is no customer defined id or cdk path defined for resource MyNestJsFunction, so we will use
+the resource logical id as the resource id
+2024-09-30 11:03:06,075 | There is no customer defined id or cdk path defined for resource ServerlessRestApi, so we will use
+the resource logical id as the resource id
+2024-09-30 11:03:06,077 | 0 stacks found in the template
+2024-09-30 11:03:06,078 | No Parameters detected in the template
+2024-09-30 11:03:06,094 | There is no customer defined id or cdk path defined for resource MyNestJsFunction, so we will use
+the resource logical id as the resource id
+2024-09-30 11:03:06,096 | There is no customer defined id or cdk path defined for resource ServerlessRestApi, so we will use
+the resource logical id as the resource id
+2024-09-30 11:03:06,097 | 2 resources found in the stack
+2024-09-30 11:03:06,098 | Found Serverless function with name='MyNestJsFunction' and CodeUri='.'
+2024-09-30 11:03:06,099 | --base-dir is not presented, adjusting uri . relative to
+C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test\template.yaml
+2024-09-30 11:03:06,107 | 2 resources found in the stack
+2024-09-30 11:03:06,108 | Found Serverless function with name='MyNestJsFunction' and CodeUri='.'
+2024-09-30 11:03:06,110 | Instantiating build definitions
+2024-09-30 11:03:06,114 | Same function build definition found, adding function (Previous: BuildDefinition(nodejs18.x,
+C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test, Zip, , e02ac33f-6a6d-41c7-97df-4542454298c1, {}, {}, x86_64, []), Current:
+BuildDefinition(nodejs18.x, C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test, Zip, , 02ab2e88-7c99-4559-b18a-b0ad8589656d, {},
+{}, x86_64, []), Function: Function({'function_id': 'MyNestJsFunction', 'name': 'MyNestJsFunction', 'functionname':
+'MyNestJsFunction', 'runtime': 'nodejs18.x', 'memory': 1024, 'timeout': 10, 'handler': 'dist/lambda.handler', 'imageuri':
+None, 'packagetype': 'Zip', 'imageconfig': None, 'codeuri': 'C:\\ec4a9867-4d56\\AWS\\test\\my-nestjs-lambda-test',
+'environment': {'Variables': {'NODE_ENV': 'production'}}, 'rolearn': None, 'layers': [], 'events': {'Api': {'Type': 'Api',
+'Properties': {'Path': '/{proxy+}', 'Method': 'ANY', 'RestApiId': 'ServerlessRestApi'}}}, 'metadata': {'SamResourceId':
+'MyNestJsFunction'}, 'inlinecode': None, 'codesign_config_arn': None, 'architectures': None, 'function_url_config': None,
+'function_build_info': <FunctionBuildInfo.BuildableZip: ('BuildableZip', 'Regular ZIP function which can be build with SAM
+CLI')>, 'stack_path': '', 'runtime_management_config': None, 'logging_config': None}))
+2024-09-30 11:03:06,123 | Building codeuri: C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test runtime: nodejs18.x architecture:
+x86_64 functions: MyNestJsFunction
+2024-09-30 11:03:06,124 | Building to following folder
+C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test\.aws-sam\build\MyNestJsFunction
+2024-09-30 11:03:06,130 | Loading workflow module 'aws_lambda_builders.workflows'
+2024-09-30 11:03:06,139 | Registering workflow 'CustomMakeBuilder' with capability 'Capability(language='provided',
+dependency_manager=None, application_framework=None)'
+2024-09-30 11:03:06,146 | Registering workflow 'DotnetCliPackageBuilder' with capability 'Capability(language='dotnet',
+dependency_manager='cli-package', application_framework=None)'
+2024-09-30 11:03:06,154 | Registering workflow 'GoModulesBuilder' with capability 'Capability(language='go',
+dependency_manager='modules', application_framework=None)'
+2024-09-30 11:03:06,163 | Registering workflow 'JavaGradleWorkflow' with capability 'Capability(language='java',
+dependency_manager='gradle', application_framework=None)'
+2024-09-30 11:03:06,172 | Registering workflow 'JavaMavenWorkflow' with capability 'Capability(language='java',
+dependency_manager='maven', application_framework=None)'
+2024-09-30 11:03:06,179 | Registering workflow 'NodejsNpmBuilder' with capability 'Capability(language='nodejs',
+dependency_manager='npm', application_framework=None)'
+2024-09-30 11:03:06,186 | Registering workflow 'NodejsNpmEsbuildBuilder' with capability 'Capability(language='nodejs',
+dependency_manager='npm-esbuild', application_framework=None)'
+2024-09-30 11:03:06,194 | Registering workflow 'PythonPipBuilder' with capability 'Capability(language='python',
+dependency_manager='pip', application_framework=None)'
+2024-09-30 11:03:06,200 | Registering workflow 'RubyBundlerBuilder' with capability 'Capability(language='ruby',
+dependency_manager='bundler', application_framework=None)'
+2024-09-30 11:03:06,208 | Registering workflow 'RustCargoLambdaBuilder' with capability 'Capability(language='rust',
+dependency_manager='cargo', application_framework=None)'
+2024-09-30 11:03:06,210 | Found workflow 'NodejsNpmBuilder' to support capabilities 'Capability(language='nodejs',
+dependency_manager='npm', application_framework=None)'
+2024-09-30 11:03:06,238 | Running workflow 'NodejsNpmBuilder'
+2024-09-30 11:03:06,239 |  Running NodejsNpmBuilder:NpmPack
+2024-09-30 11:03:06,239 | NODEJS packaging file:C:\ec4a9867-4d56\AWS\test\my-nestjs-lambda-test to
+C:\Users\M9A61~1.PET\AppData\Local\Temp\tmpgb5bovgx
+2024-09-30 11:03:06,240 | executing NPM: ['npm.cmd', 'pack', '-q',
+'file:C:\\ec4a9867-4d56\\AWS\\test\\my-nestjs-lambda-test']
+2024-09-30 11:03:08,142 | NODEJS packed to my-nestjs-lambda-test-0.0.1.tgz
+2024-09-30 11:03:08,144 | NODEJS extracting to C:\Users\M9A61~1.PET\AppData\Local\Temp\tmpgb5bovgx\unpacked
+2024-09-30 11:03:08,145 | NodejsNpmBuilder:NpmPack raised unhandled exception
+Traceback (most recent call last):
+  File "C:\Program Files\Amazon\AWSSAMCLI\runtime\Lib\site-packages\aws_lambda_builders\workflow.py", line 374, in run
+    action.execute()
+  File "C:\Program Files\Amazon\AWSSAMCLI\runtime\Lib\site-packages\aws_lambda_builders\workflows\nodejs_npm\actions.py",
+line 68, in execute
+    extract_tarfile(tarfile_path, self.artifacts_dir)
+  File "C:\Program Files\Amazon\AWSSAMCLI\runtime\Lib\site-packages\aws_lambda_builders\utils.py", line 230, in
+extract_tarfile
+    with tarfile.open(tarfile_path, "r:*") as tar:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "tarfile.py", line 1835, in open
+  File "tarfile.py", line 1903, in gzopen
+  File "gzip.py", line 192, in __init__
+FileNotFoundError: [Errno 2] No such file or directory:
+'C:\\Users\\M9A61~1.PET\\AppData\\Local\\Temp\\tmpgb5bovgx\\my-nestjs-lambda-test-0.0.1.tgz'
+
+Build Failed
+2024-09-30 11:03:08,160 | Telemetry endpoint configured to be
+https://aws-serverless-tools-telemetry.us-west-2.amazonaws.com/metrics
+2024-09-30 11:03:10,073 | Telemetry endpoint configured to be
+https://aws-serverless-tools-telemetry.us-west-2.amazonaws.com/metrics
+2024-09-30 11:03:10,077 | Sending Telemetry: {'metrics': [{'commandRun': {'requestId':
+'9d32c7c2-8b65-4e76-8ce0-c3f0350a0996', 'installationId': '6ac08d05-fe5e-4c76-b1f5-a9c186c9a63f', 'sessionId':
+'f526faad-ae3d-4e6c-adb4-8ab189cb5e1c', 'executionEnvironment': 'CLI', 'ci': False, 'pyversion': '3.12.6', 'samcliVersion':
+'1.124.0', 'awsProfileProvided': False, 'debugFlagProvided': True, 'region': '', 'commandName': 'sam build',
+'metricSpecificAttributes': {'projectType': 'CFN', 'gitOrigin': None, 'projectName':
+'fca3043308c9d3e392be0e05fa15013c37ed1efd7ff89561629e4df0a0ee05cb', 'initialCommit': None}, 'duration': 2381, 'exitReason':
+'WorkflowUnknownError', 'exitCode': 1}}]}
+2024-09-30 11:03:10,077 | Unable to find Click Context for getting session_id.
+2024-09-30 11:03:10,106 | Sending Telemetry: {'metrics': [{'events': {'requestId': '43ead927-99ed-473f-ab44-bfc6d9d74cbf',
+'installationId': '6ac08d05-fe5e-4c76-b1f5-a9c186c9a63f', 'sessionId': 'f526faad-ae3d-4e6c-adb4-8ab189cb5e1c',
+'executionEnvironment': 'CLI', 'ci': False, 'pyversion': '3.12.6', 'samcliVersion': '1.124.0', 'commandName': 'sam build',
+'metricSpecificAttributes': {'events': [{'event_name': 'SamConfigFileExtension', 'event_value': '.toml', 'thread_id':
+'54fc5f6e016f4a21a3a516afff4aba84', 'time_stamp': '2024-09-30 09:03:05.753', 'exception_name': None}, {'event_name':
+'SamConfigFileExtension', 'event_value': '.toml', 'thread_id': 'bff852b3d95c48aca44038bbf4d0c820', 'time_stamp': '2024-09-30
+09:03:05.778', 'exception_name': None}, {'event_name': 'BuildFunctionRuntime', 'event_value': 'nodejs18.x', 'thread_id':
+'5ce912659f004efc801ed7c7a4f40f80', 'time_stamp': '2024-09-30 09:03:06.110', 'exception_name': None}, {'event_name':
+'BuildWorkflowUsed', 'event_value': 'nodejs-npm', 'thread_id': 'e497296dfb2048ddb933e402f99f03ae', 'time_stamp': '2024-09-30
+09:03:06.127', 'exception_name': None}]}}}]}
+2024-09-30 11:03:10,836 | HTTPSConnectionPool(host='aws-serverless-tools-telemetry.us-west-2.amazonaws.com', port=443): Read
+timed out. (read timeout=0.1)
+2024-09-30 11:03:10,842 | HTTPSConnectionPool(host='aws-serverless-tools-telemetry.us-west-2.amazonaws.com', port=443): Read
+timed out. (read timeout=0.1)
+Error: NodejsNpmBuilder:NpmPack - [Errno 2] No such file or directory: 'C:\\Users\\M9A61~1.PET\\AppData\\Local\\Temp\\tmpgb5bovgx\\my-nestjs-lambda-test-0.0.1.tgz'
